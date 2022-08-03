@@ -6,14 +6,17 @@ class Animal
    {
 	   x=15;
    }
-
+    void display() {
+    	System.out.println("Lion"+" "+x);
+    }
 }
 
 
 public class NonparameterizedConstructor {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Animal a = new Animal();
+		a.display();
 
 	}
 
