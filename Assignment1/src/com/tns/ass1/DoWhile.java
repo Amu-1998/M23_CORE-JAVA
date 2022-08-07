@@ -1,4 +1,4 @@
-package Assig1;
+package com.tns.ass1;
 
 public class DoWhile {
 
