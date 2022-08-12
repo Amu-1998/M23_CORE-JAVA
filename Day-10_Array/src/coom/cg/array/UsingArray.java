@@ -1,0 +1,21 @@
+package coom.cg.array;
+
+import java.util.Arrays;
+
+public class UsingArray {
+	static void display(int... a)
+	{
+		//Arrays.sort defines Array is a class and sort is a method which sort the values 
+		Arrays.sort(a);
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+ " ");
+		}
+	}
+
+	public static void main(String[] args) {
+		display(12,3,545,33,546,42);
+
+	}
+
+}
