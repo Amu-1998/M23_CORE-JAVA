@@ -13,6 +13,7 @@ public class QueueExample {
 		System.out.println(q);
 		//it will give the first element
 		System.out.println(q.peek());
+		//it will remove the element
 		System.out.println(q.poll());
 
 	}
