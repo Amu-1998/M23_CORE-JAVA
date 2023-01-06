@@ -12,25 +12,29 @@ import com.cg.entities.Employee;
 public class EmployeeRepoImpl implements EmployeeRepo{
 	EmployeeDao dao;
 	
-	
 	public EmployeeRepoImpl() 
 	{
 		dao=new EmployeeDao();
 	}
 
+	//it creates a sqlserverstatement object for sending sql statements to database
 	@Override
 	public Statement createStatement() {
 		Connection c=dao.createConnection();
 		Statement s;
-		try {
+		try 
+		{
 			s=c.createStatement();
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e) 
+		{
 			s=null;
 			
 		}
 		return s;
 	}
 
+	//sql statements can be executed multiple times
 	@Override
 	public PreparedStatement createPrepareStatement(String query) {
 		Connection c=dao.createConnection();
@@ -85,6 +89,7 @@ public class EmployeeRepoImpl implements EmployeeRepo{
 		try {
 			s.setInt(2, e.getID());
 			s.setString(1, e.getEname());
+			
 			count=s.executeUpdate();
 		} catch (SQLException e1) {
 			

@@ -56,7 +56,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 			e.setEname(r.getString(2));
 		}
 		catch (SQLException e1) {
-			// TODO Auto-generated catch block
+			
 			e1.printStackTrace();
 		}
 		return e;
@@ -80,7 +80,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 				
 			}
 		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
+			
 			e1.printStackTrace();
 		}
 		return emp;

@@ -31,6 +31,7 @@ public class Client
 					Employee e;
 					try
 					{
+						
 						e=service.GetEmployee(s.nextInt());
 					}
 					catch(Exception e1)
@@ -76,6 +77,7 @@ public class Client
 					System.out.println("Something went wrong in creation");
 			}
 			break;
+	
 			case 5:
 			{
 				System.out.println("Enter the ID  of  emp that u want to update");

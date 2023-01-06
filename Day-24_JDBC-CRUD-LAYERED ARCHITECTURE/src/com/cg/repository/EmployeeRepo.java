@@ -10,6 +10,7 @@ public interface EmployeeRepo
 {
 	Statement createStatement();
 	PreparedStatement createPrepareStatement(String query);
+	
 	public ResultSet RetreiveQuery(String query);//retrieve
 	public int AddQuery(String query,Employee e);//add
 	public int updateQuery(String query,Employee e);//update
