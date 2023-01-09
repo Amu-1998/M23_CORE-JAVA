@@ -8,7 +8,7 @@ public class Example1 {
 
 		LocalDate date1=LocalDate.now();
 		LocalDate date2=date1.plusDays(12);
-		System.out.println(date2);
+		System.out.println(date1);
 				
 	}
 
